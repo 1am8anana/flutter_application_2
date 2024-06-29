@@ -18,7 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Column(children: [
+            Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
               Text("something"),
               Text("something"),
               Row(
@@ -38,7 +38,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               )
             ]),
-            Image.asset("images/hmmm.jpg")
+            Container(
+                child: Image.asset("images/hmmm.jpg"), height: 500, width: 800)
           ],
         ),
       ),
